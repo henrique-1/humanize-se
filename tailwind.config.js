@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./views/**/*.{html,js}", "./index.html"],
+  content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
       colors: {
@@ -30,12 +30,26 @@ module.exports = {
           900: "#003db3",
           950: "#003087",
         },
+        "electric-violet": {
+          50: "#f3f1ff",
+          100: "#ebe5ff",
+          200: "#d9ceff",
+          300: "#bea6ff",
+          400: "#9f75ff",
+          500: "#843dff",
+          600: "#7916ff",
+          700: "#6b04fd",
+          800: "#5a03d5",
+          900: "#4b05ad",
+          950: "#2c0076",
+        },
       },
     },
     fontFamily: {
       montserrat: ["Montserrat", "sans-serif"],
       poppins: ["Poppins", "sans-serif"],
       mandan: ["Mandan", "sans-serif"],
+      cookie: ["Cookie", "cursive"],
     },
     screens: {
       cellphone: "320px",
@@ -51,5 +65,11 @@ module.exports = {
       // => @media (min-width: 1280px) { ... }
     },
   },
-  plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms"), require("@tailwindcss/aspect-ratio"), require("@tailwindcss/container-queries")],
+  plugins: [
+    require("@tailwindcss/typography"),
+    require("@tailwindcss/forms"),
+    require("@tailwindcss/aspect-ratio"),
+    require("@tailwindcss/container-queries"),
+    require("tailwind-scrollbar")({ nocompatible: true }),
+  ],
 };
