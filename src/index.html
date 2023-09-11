@@ -10,52 +10,33 @@
       href="https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="./scripts/currentYear.js"></script>
     <title>Humanize-se</title>
   </head>
-  <body class="flex flex-col w-full h-full font-poppins scrollbar-thin scrollbar-thumb-resolution-blue-950 scrollbar-track-supernova-50 scrollbar-thumb-rounded-full">
+  <body
+    class="flex flex-col w-full h-full font-poppins scroll-smooth scrollbar-thin scrollbar-thumb-resolution-blue-950 scrollbar-track-supernova-50 scrollbar-thumb-rounded-full bg-supernova-50 gap-6">
     <header class="flex flex-row desktop:h-24 laptop:h-20 tablet:h-20 cellphone:h-14 justify-around items-center bg-supernova-500 border-b-resolution-blue-950 border-b-4">
-      <h1 class="uppercase text-7xl font-mandan text-resolution-blue-950">Humanize-se</h1>
-      <!-- <div class="flex flex-row gap-3 items-center font-medium text-base text-resolution-blue-950 ">
-        <a class="">Recrutamento e Seleção</a>
-        <i class="ph-bold ph-dot"></i>
-        <a class="">Alta Rotatividade</a>
-        <i class="ph-bold ph-dot"></i>
-        <a class="">Assédio</a>
-        <i class="ph-bold ph-dot"></i>
-        <a class="">Inclusão</a>
-        <i class="ph-bold ph-dot"></i>
-        <a class="">Conflito</a>
-        <i class="ph-bold ph-dot"></i>
-        <a class="">Feedback</a>
-        <i class="ph-bold ph-dot"></i>
-        <a class="">Ambiente Humanizado</a>
-        <i class="ph-bold ph-dot"></i>
-        <a class="">Reconhecimento</a>
-        <i class="ph-bold ph-dot"></i>
-        <a class="">Liderança Participativa</a>
-      </div> -->
+      <a class="uppercase text-7xl font-mandan text-resolution-blue-950" href="index.html">Humanize-se</a>
     </header>
-    <article class="flex flex-col bg-supernova-50 pt-6 gap-2">
+    <article class="flex flex-col bg-supernova-50 gap-2">
       <!--* Liderança Humanizada -->
       <div class="flex pl-4 pr-4 justify-center">
-        <div class="flex desktop:flex-row laptop:flex-col tablet:flex-col cellphone:flex-col bg-gray-50 rounded-2xl shadow-2xl border-t-2 border-t-gray-100">
+        <div class="flex desktop:flex-col laptop:flex-col tablet:flex-col cellphone:flex-col bg-gray-50 rounded-2xl shadow-2xl border-t-2 border-t-gray-100">
           <!--* Vídeo -->
-          <!-- <div class="">
-            
-          </div> -->
           <video class="rounded-2xl w-auto desktop:h-96 laptop:h-96 tablet:h-96 cellphone:h-44 shadow-2xl" preload="auto" controls>
             <source src="assets/videos/apresentacao.mp4" type="video/mp4" />
           </video>
           <div
-            class="desktop:w-96 desktop:h-96 laptop:max-w-2xl laptop:h-auto tablet:max-w-2xl tablet:h-auto cellphone:max-w-xs cellphone:h-auto flex flex-col justify-stretch pt-2 pb-2 pl-2 pr-2">
+            class="desktop:w-96 desktop:h-auto laptop:max-w-2xl laptop:h-auto tablet:max-w-2xl tablet:h-auto cellphone:max-w-xs cellphone:h-auto flex flex-col justify-stretch pt-2 pb-2 pl-2 pr-2">
             <h1 class="text-justify text-2xl font-semibold uppercase">Liderança Humanizada</h1>
-            <p class="text-sm font-normal text-justify">
+            <!-- <p class="text-sm font-normal text-justify">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Vitae purus faucibus ornare suspendisse
               sed nisi lacus sed. Lectus sit amet est placerat in egestas. Dui vivamus arcu felis bibendum ut tristique. Vitae proin sagittis nisl rhoncus mattis rhoncus urna.
               Dolor sit amet consectetur adipiscing. Sagittis purus sit amet volutpat consequat mauris nunc congue nisi. Ac turpis egestas sed tempus urna et pharetra. Mauris sit
               amet massa vitae tortor. Sit amet est placerat in egestas erat imperdiet sed. Orci ac auctor augue mauris augue neque gravida in. Sit amet consectetur adipiscing elit
               duis tristique. Mauris nunc congue nisi vitae suscipit. Non odio euismod lacinia at quis risus. Imperdiet proin fermentum leo vel.
-            </p>
+            </p> -->
           </div>
         </div>
       </div>
@@ -69,8 +50,6 @@
       <div class="flex flex-col pl-4 pr-4 gap-4">
         <div class="flex flex-row gap-3 items-center">
           <h1 class="uppercase font-semibold text-2xl">Recrutamento e Seleção</h1>
-          <span class="text-2xl font-light">|</span>
-          <a class="uppercase underline font-light text-base">Ver mais</a>
         </div>
         <div class="flex flex-row overflow-x-auto gap-x-6 scrollbar scrollbar-h-2 scrollbar-thumb-resolution-blue-950 scrollbar-track-supernova-50">
           <!--* Artigo -->
@@ -83,7 +62,7 @@
                 O papel do RH no engajamento dos gestores para o processo de <span class="text-electric-violet-500 font-medium">Recrutamento e Seleção</span> é fundamental para um
                 processo bem-sucedido.
               </p>
-              <a class="absolute bottom-4 right-2 self-end uppercase underline font-extralight text-xs">Ver mais</a>
+              <a class="absolute bottom-4 right-2 self-end uppercase underline font-extralight text-xs" href="views/articles/recrutamento/Artigo1.html">Ver mais</a>
             </div>
           </div>
           <div class="flex flex-col w-72 h-96 rounded-2xl shadow-lg bg-gray-50 mb-6">
@@ -94,7 +73,7 @@
                 Qual a importância do engajamento dos gestores no processo de <span class="uppercase text-electric-violet-500">Recrutamento e Seleção</span>?
               </h1>
               <p class="text-sm font-normal">Gestores engajados sabem as necessidades da empresa e da sua equipe.</p>
-              <a class="absolute bottom-4 right-2 self-end uppercase underline font-extralight text-xs">Ver mais</a>
+              <a class="absolute bottom-4 right-2 self-end uppercase underline font-extralight text-xs" href="views/articles/recrutamento/Artigo2.html">Ver mais</a>
             </div>
           </div>
           <div class="flex flex-col w-72 h-96 rounded-2xl shadow-lg bg-gray-50 mb-6">
@@ -106,7 +85,7 @@
                 Alguns fatores como falta de confiança e conhecimento sobre o processo de
                 <span class="text-electric-violet-500 font-medium">Recrutamento e Seleção</span> criam desafios nesta atividade.
               </p>
-              <a class="absolute bottom-4 right-2 self-end uppercase underline font-extralight text-xs">Ver mais</a>
+              <a class="absolute bottom-4 right-2 self-end uppercase underline font-extralight text-xs" href="views/articles/recrutamento/Artigo3.html">Ver mais</a>
             </div>
           </div>
           <div class="flex flex-col w-72 h-96 rounded-2xl shadow-lg bg-gray-50 mb-6">
@@ -115,7 +94,7 @@
             <div class="flex flex-col pl-2 pt-2 pr-2 w-72 h-full relative">
               <h1 class="uppercase text-base font-bold">Como engajar o gestor no processo de contratação?</h1>
               <p class="text-sm font-normal">Os gestores e todas as áreas da empresa precisam entender como o processo de contratação de novos colaboradores funciona.</p>
-              <a class="absolute bottom-4 right-2 self-end uppercase underline font-extralight text-xs">Ver mais</a>
+              <a class="absolute bottom-4 right-2 self-end uppercase underline font-extralight text-xs" href="views/articles/recrutamento/Artigo4.html">Ver mais</a>
             </div>
           </div>
         </div>
@@ -130,8 +109,6 @@
       <div class="flex flex-col pl-4 pr-4 gap-4">
         <div class="flex flex-row gap-3 items-center">
           <h1 class="uppercase font-semibold text-2xl">Alta Rotatividade</h1>
-          <span class="text-2xl font-light">|</span>
-          <a class="uppercase underline font-light text-base">Ver mais</a>
         </div>
         <div class="flex flex-row overflow-x-auto gap-x-6 scrollbar scrollbar-h-2 scrollbar-thumb-resolution-blue-950 scrollbar-track-supernova-50">
           <!--* Artigo -->
@@ -144,7 +121,7 @@
                 A alta rotatividade, também conhecida como <span class="text-electric-violet-500 font-medium">turnover</span>, é um índice que mede a entrada e saída de
                 funcionários em determinado tempo.
               </p>
-              <a class="absolute bottom-4 right-2 self-end uppercase underline font-extralight text-xs">Ver mais</a>
+              <a class="absolute bottom-4 right-2 self-end uppercase underline font-extralight text-xs" href="views/articles/rotatividade/Artigo1.html">Ver mais</a>
             </div>
           </div>
           <div class="flex flex-col w-72 h-96 rounded-2xl shadow-lg bg-gray-50 mb-6">
@@ -155,7 +132,7 @@
               <p class="text-sm font-normal">
                 Existem muitos motivos pelos quais uma empresa pode enfrentar <span class="text-electric-violet-500 font-medium">Alta Rotatividade</span>.
               </p>
-              <a class="absolute bottom-4 right-2 self-end uppercase underline font-extralight text-xs">Ver mais</a>
+              <a class="absolute bottom-4 right-2 self-end uppercase underline font-extralight text-xs" href="views/articles/rotatividade/Artigo2.html">Ver mais</a>
             </div>
           </div>
           <div class="flex flex-col w-72 h-96 rounded-2xl shadow-lg bg-gray-50 mb-6">
@@ -167,7 +144,7 @@
                 A <span class="text-electric-violet-500 font-medium">Alta Rotatividade</span> está totalmente ligada a produtividade, cultura organizacional entre outros aspectos
                 da instituição.
               </p>
-              <a class="absolute bottom-4 right-2 self-end uppercase underline font-extralight text-xs">Ver mais</a>
+              <a class="absolute bottom-4 right-2 self-end uppercase underline font-extralight text-xs" href="views/articles/rotatividade/Artigo3.html">Ver mais</a>
             </div>
           </div>
           <div class="flex flex-col w-72 h-96 rounded-2xl shadow-lg bg-gray-50 mb-6">
@@ -179,7 +156,7 @@
                 Algumas atitudes são essenciais para combater a <span class="text-electric-violet-500 font-medium">Alta Rotatividade</span>, problemas que vem crescendo ao longo do
                 tempo.
               </p>
-              <a class="absolute bottom-4 right-2 self-end uppercase underline font-extralight text-xs">Ver mais</a>
+              <a class="absolute bottom-4 right-2 self-end uppercase underline font-extralight text-xs" href="views/articles/rotatividade/Artigo4.html">Ver mais</a>
             </div>
           </div>
         </div>
@@ -294,8 +271,6 @@
       <div class="flex flex-col pl-4 pr-4 gap-4">
         <div class="flex flex-row gap-3 items-center">
           <h1 class="uppercase font-semibold text-2xl">Assédio</h1>
-          <span class="text-2xl font-light">|</span>
-          <a class="uppercase underline font-light text-base">Ver mais</a>
         </div>
         <div class="flex flex-row overflow-x-auto gap-x-6 scrollbar scrollbar-h-2 scrollbar-thumb-resolution-blue-950 scrollbar-track-supernova-50">
           <!--* Artigo -->
@@ -390,8 +365,6 @@
       <div class="flex flex-col pl-4 pr-4 gap-4">
         <div class="flex flex-row gap-3 items-center">
           <h1 class="uppercase font-semibold text-2xl">Inclusão</h1>
-          <span class="text-2xl font-light">|</span>
-          <a class="uppercase underline font-light text-base">Ver mais</a>
         </div>
         <div class="flex flex-row overflow-x-auto gap-x-6 scrollbar scrollbar-h-2 scrollbar-thumb-resolution-blue-950 scrollbar-track-supernova-50">
           <!--* Artigo -->
@@ -469,8 +442,6 @@
       <div class="flex flex-col pl-4 pr-4 gap-4">
         <div class="flex flex-row gap-3 items-center">
           <h1 class="uppercase font-semibold text-2xl">Conflito</h1>
-          <span class="text-2xl font-light">|</span>
-          <a class="uppercase underline font-light text-base">Ver mais</a>
         </div>
         <div class="flex flex-row overflow-x-auto gap-x-6 scrollbar scrollbar-h-2 scrollbar-thumb-resolution-blue-950 scrollbar-track-supernova-50">
           <!--* Artigo -->
@@ -537,8 +508,6 @@
       <div class="flex flex-col pl-4 pr-4 gap-4">
         <div class="flex flex-row gap-3 items-center">
           <h1 class="uppercase font-semibold text-2xl">Feedback</h1>
-          <span class="text-2xl font-light">|</span>
-          <a class="uppercase underline font-light text-base">Ver mais</a>
         </div>
         <div class="flex flex-row overflow-x-auto gap-x-6 scrollbar scrollbar-h-2 scrollbar-thumb-resolution-blue-950 scrollbar-track-supernova-50">
           <!--* Artigo -->
@@ -637,8 +606,6 @@
       <div class="flex flex-col pl-4 pr-4 gap-4">
         <div class="flex flex-row gap-3 items-center">
           <h1 class="uppercase font-semibold text-2xl">Ambiente Humanizado</h1>
-          <span class="text-2xl font-light">|</span>
-          <a class="uppercase underline font-light text-base">Ver mais</a>
         </div>
         <div class="flex flex-row overflow-x-auto gap-x-6 scrollbar scrollbar-h-2 scrollbar-thumb-resolution-blue-950 scrollbar-track-supernova-50">
           <!--* Artigo -->
@@ -651,7 +618,7 @@
                 É de suma importância conhecermos o conceito e a importância de sermos <span class="text-electric-violet-500 font-medium">humanizados</span> em nosso
                 <span class="text-electric-violet-500 font-medium">ambiente</span> de trabalho.
               </p>
-              <a class="absolute bottom-4 right-2 self-end uppercase underline font-extralight text-xs">Ver mais</a>
+              <a class="absolute bottom-4 right-2 self-end uppercase underline font-extralight text-xs" href="views/articles/ambiente/Artigo1.html">Ver mais</a>
             </div>
           </div>
           <div class="flex flex-col w-72 h-96 rounded-2xl shadow-lg bg-gray-50 mb-6">
@@ -663,7 +630,7 @@
                 Ter um <span class="text-electric-violet-500 font-medium">ambiente</span> de trabalho <span class="text-electric-violet-500 font-medium">humanizado</span>, traz
                 benefícios sólidos para a organização.
               </p>
-              <a class="absolute bottom-4 right-2 self-end uppercase underline font-extralight text-xs">Ver mais</a>
+              <a class="absolute bottom-4 right-2 self-end uppercase underline font-extralight text-xs" href="views/articles/ambiente/Artigo2.html">Ver mais</a>
             </div>
           </div>
         </div>
@@ -678,8 +645,6 @@
       <div class="flex flex-col pl-4 pr-4 gap-4">
         <div class="flex flex-row gap-3 items-center">
           <h1 class="uppercase font-semibold text-2xl">Reconhecimento</h1>
-          <span class="text-2xl font-light">|</span>
-          <a class="uppercase underline font-light text-base">Ver mais</a>
         </div>
         <div class="flex flex-row overflow-x-auto gap-x-6 scrollbar scrollbar-h-2 scrollbar-thumb-resolution-blue-950 scrollbar-track-supernova-50">
           <!--* Artigo -->
@@ -745,9 +710,7 @@
       <!--* Liderança Participativa -->
       <div class="flex flex-col pl-4 pr-4 gap-4">
         <div class="flex flex-row gap-3 items-center">
-          <h1 class="uppercase font-semibold text-2xl">Reconhecimento</h1>
-          <span class="text-2xl font-light">|</span>
-          <a class="uppercase underline font-light text-base">Ver mais</a>
+          <h1 class="uppercase font-semibold text-2xl">Liderança Participativa</h1>
         </div>
         <div class="flex flex-row overflow-x-auto gap-x-6 scrollbar scrollbar-h-2 scrollbar-thumb-resolution-blue-950 scrollbar-track-supernova-50">
           <!--* Artigo -->
@@ -801,11 +764,14 @@
       </div>
     </article>
     <footer
-      class="flex flex-row desktop:h-24 laptop:h-20 tablet:h-20 cellphone:h-14 justify-start items-center bg-supernova-500 border-t-resolution-blue-950 border-t-4 pl-2 pr-2 pt-2 pb-2">
-      <nav class="border-l-2 border-l-resolution-blue-950 pl-2">
-        <ul class="flex flex-col gap-2">
-          <li class="underline underline-offset-1 text-resolution-blue-950 text-lg font-medium"><a>Sobre</a></li>
-        </ul>
+      class="flex flex-col desktop:h-14 laptop:h-14 tablet:h-14 cellphone:h-20 justify-start items-center bg-supernova-500 border-t-resolution-blue-950 border-t-4 pl-2 pr-2 pt-2 pb-2">
+      <nav class="flex flex-row h-full w-full gap-4 items-center justify-center">
+        <a class="underline underline-offset-1 text-resolution-blue-950 text-xs font-normal" href="./views/about.html">Sobre</a>
+        <a class="underline underline-offset-1 text-resolution-blue-950 text-xs font-normal" href="./views/referencias.html">Referências</a>
+        <p class="text-xs font-light">&copy; <span id="currentYear"></span> Rafael de Morais Vieira</p>
+      </nav>
+      <nav class="flex flex-row h-full w-full gap-4 items-center justify-center">
+        <h6 class="text-xs font-light">Os conteúdos disponíveis neste website são para fins estudantis.</h6>
       </nav>
     </footer>
   </body>
