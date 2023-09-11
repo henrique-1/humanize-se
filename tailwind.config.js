@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/index.html", "./src/views/*.html", "./src/views/articles/**/*.html"],
   theme: {
     extend: {
+      listStyleType: {
+        square: "square",
+        roman: "upper-roman",
+      },
       colors: {
         supernova: {
           50: "#ffffe7",
