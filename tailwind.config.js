@@ -65,7 +65,10 @@ module.exports = {
       laptop: "1024px",
       // => @media (min-width: 1024px) { ... }
 
-      desktop: "1280px",
+      projetor: "1280px",
+      // => @media (min-width: 1280px) { ... }
+
+      desktop: "1360px",
       // => @media (min-width: 1280px) { ... }
     },
   },
